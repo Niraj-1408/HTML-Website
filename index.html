@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Home - Microproject</title>
+    <link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="WebStart_Logo.jpg">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+body {
+  background-image: url('images\Pattern.jpg');
+  background-repeat: no-repeat;
+}
+</style>
+
+</head>
+<body >
+	
+	
+	<header Style="background-image:url('images/pexels-ahmedadly-1270184.jpg'); Background-size: auto; ">
+		<center>
+			<div>
+				<h1 style="text-shadow: 3px 6px 6px red; color:white;">WebStart</h1>
+				<a target="_blank" href="WebStart_Logo.jpg" alt="WebStart Logo" download="WebStart_Logo">
+					<div>
+						<a><img src="WebStart_Logo.jpg" style="border: 4px dotted #ddd; border-radius: 70%; padding: 5px; width: 120px;"></a>
+					</div>
+				</a>
+			</div>
+		</center><br>
+		
+		<button onclick="myFunction()" align="center"> <b> Dark Mode | White Mode </b> </button>
+			<h1>Welcome to Our Website</h1>
+				
+				<nav>
+					<ul>
+						<div class="more-button-container">
+						<button id="moreBtn">More</button>
+							<div id="menu" class="menu hidden">
+								<li><a href="#Introduction" class="active">	<button class="button button1">Intro</button>		</a></li>
+								<li><a href="#home" class="active">			<button class="button button2">Home</button>		</a></li>
+								<li><a href="#about" class="active">		<button class="button button3">About</button>		</a></li>
+								<li><a href="#service" class="active">		<button class="button button4">Service</button>		</a></li>
+								<li><a href="#learn" class="active">		<button class="button button5">Learn</button>		</a></li>
+								<li><a href="#contact" class="active">		<button class="button button6">Contact</button>		</a></li>
+									<b style="color:black;"> ➖➖➖ </b>
+								<br><b style="color:black;">some Extra buttons</b><br>									
+								<li><a href="#ImageGallery" class="active">	<button><b>Image Gallery</b></button>		</a></li><br>
+								<li><a href="#WebsiteExamples" class="active">	<button><b>website examples</b></button>	</a></li><br>
+								<button onclick="myFunction()" align="center"> <b> Dark Mode | White Mode </b> </button><br>
+							</div>
+						</div>
+					</ul>
+				</nav>	
+						
+				<div class="service-card">
+					<h3>Web Designing</h3>
+						<p>Learn how to design stunning websites.</p>
+					<button onclick="openModal('modal1')">Read More</button>
+				</div>
+			
+			<div id="modal1" class="modal">
+				<div class="modal-content">
+					<span class="close" onclick="closeModal('modal1')">&times;</span>
+						<h2>Web Designing Course Details</h2>
+						<p>Learn HTML, CSS, animations, responsive design, and make beautiful web pages.</p>
+				</div>
+			</div>
+			<br>
+			<input type="text" placeholder="Search.." style="border-color:red;">
+	</header>
+		
+		<script src="script.js"></script>
+		
+		<script>
+		/* More Button */
+			const moreBtn = document.getElementById('moreBtn');
+			const menu = document.getElementById('menu');
+			moreBtn.addEventListener('click', () => {
+				menu.classList.toggle('hidden');
+				});
+		</script>
+		
+		
+		<script>
+		/* Dark Mode And White Mode */
+			function myFunction() {
+			var element = document.body;
+			element.classList.toggle("dark-mode");
+			}
+		</script>
+	
+		
+		<script>
+		/* smooth scrolling */
+			document.querySelectorAll('.menu a').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+			e.preventDefault();
+			const target = document.querySelector(this.getAttribute('href'));
+			window.scrollTo({
+				top: target.offsetTop - 20, // adjust offset if needed
+				behavior: 'smooth'
+				});
+				// Hide menu after clicking
+				menu.classList.add('hidden');
+				});
+				});
+		</script>
+		
+		<script>
+		function openModal(id) {
+  document.getElementById(id).style.display = 'flex';
+}
+function closeModal(id) {
+  document.getElementById(id).style.display = 'none';
+}
+		</script>
+		
+		<br>
+		
+	<div align="center">
+		<a href="#learn"><img src="images/Website_Images/html-css-javascript.png" Style="height: 200px; Background: White; padding: 30px; border-radius: 50px; border-style: solid; border-color: red;"> </a>
+	</div>
+		
+		
+	<section id="Introduction">
+		<h1 style="border: 6px double #007bff; padding: 5px;">Introduction</h1>
+		  <div class="intro-section">
+			<h2 rel="icon" href="WebStart_Logo.jpg">HTML Basics</h2>
+				<strong>
+					<ul>
+					  <li>HTML stands for HyperText Markup Language.</li>
+					  <li>Used to structure content on the web.</li>
+					  <li>Common elements: headings, paragraphs, links, images, forms.</li>
+					  <li>Basic structure: doctype, html, head, body.</li>
+					</ul>
+				</strong>
+		  </div>
+
+		  <div class="intro-section">
+			<h2>CSS Styling</h2>
+				<strong>
+					<ul>
+					  <li>CSS stands for Cascading Style Sheets.</li>
+					  <li>Used to style HTML elements (color, layout, fonts).</li>
+					  <li>Can be internal, external, or inline.</li>
+					  <li>Supports animations, transitions, and responsive design.</li>
+					</ul>
+				</strong>
+		  </div>
+		  
+		  <div class="intro-section">
+			<h2>JavaScript for Beginners</h2>
+				<strong>
+					<ul>
+					  <li>JavaScript adds interactivity to websites.</li>
+					  <li>Used for form validation, dynamic content, sliders, and more.</li>
+					  <li>Can modify HTML and CSS on the fly.</li>
+					  <li>Works in all modern browsers.</li>
+					</ul>
+				</strong>
+		  </div>
+	</section>
+
+
+	<section id="home">
+		<div class="divider"><h1>Home</h1></div>
+        <h3>Your One-Step Solution</h3>
+        <p>We provide the best services to fulfill your needs.</p>
+        <a href="#service" class="btn">Explore Services</a>
+    </section>
+	
+	
+	
+	<section id="about">
+		<div class="divider"><h1>About</h1></div>
+        <h2>Who We Are</h2>
+        <p>We are a team dedicated to providing quality services.</p>
+    </section>
+	
+	
+	
+	<section id="service">
+	<div class="divider"><h1>Service</h1></div>
+        <h2>What We Offer</h2>
+		<center>
+			<table border="5px" style="padding:5px; background-image:url('images/New folder/Home.jpg'); color:White;">
+			<tr>
+				<td  align="center">Web Development</td>
+				<td> <button onclick="location.href='#learn'">Visit</button>	</td>
+			</tr>
+			<tr>
+				<td  align="center">image gallery</td>
+				<td> <button onclick="location.href='#ImageGallery'">Visit</button>	</td>
+			</tr>
+			<tr>
+				<td  align="center">Some Examples of Website</td>
+				<td> <button onclick="location.href='#WebsiteExamples'">Visit</td>
+			</tr>
+			</table>
+		</center>
+	
+		<p>
+			<center>
+				<table border="2px">
+					<tr>
+						<th>Click Here To Pick Colour Codes : </th> 
+						<th><input type="color" name="colour"><br></th>
+					</tr>
+				</table>
+			</center>
+		</p>
+	
+	</section>
+	
+	
+	
+	<section id="learn">
+		<div class="divider"><h1>Learn</h1></div>
+		<br>
+		<iframe src="https://en.wikipedia.org/wiki/HTML" align="" height="580" width="500" Style="float: left;"> <h3> HTML wikipedia </h3> </iframe> 	
+		<iframe src="https://en.wikipedia.org/wiki/CSS"  align="" height="580" width="500" Style="float: right;"> <h3> CSS wikipedia </h3> </iframe>
+		<br>
+	
+        <h2>Educational Resources</h2>
+        <p>Explore our notes to learn basic things of popular Topics to enhance your knowledge.</p>
+		
+			<center>
+			<table border="5px" style="padding:5px; background-image:url('images/New folder/Home.jpg'); color:White;">
+			
+				<tr>
+				<th>Sr.No.</th>
+				<th><h3>Popular Topics:</h3></th>
+				</tr>
+				<br>
+			
+				<tr>
+				<td>1.</td>
+				<td><a href="Files/pdf/HTML_Basics.pdf" target="_blank" Style="color: red">HTML Basics</a></td>
+				</tr>
+			
+				<tr>
+				<td>2.</td>
+				<td><a href="Files/pdf/CSS_Styling_Basics.pdf" target="_blank" Style="color: red">CSS Styling</a></td>
+				</tr>
+			
+				<tr>
+				<td>3.</td>
+				<td><a href="Files/pdf/JavaScript_for_Beginners.pdf" target="_blank" Style="color: red">JavaScript for Beginners</a></td>
+				</tr>
+			
+			</table>
+			</center>
+					
+        <h3>Latest Topics:</h3>
+        <p>
+            <h4>Introduction to Web Development</h4>
+            <p>Web development is the process of building and maintaining websites...</p>
+            <a href="https://www.w3schools.com/html/html_intro.asp" target="_blank" Style="color: red">Read More</a>
+        </p>
+
+        <p>
+            <h4>How to Style a Website with CSS</h4>
+            <p>CSS (Cascading Style Sheets) allows you to style your website efficiently...</p>
+            <a href="https://www.w3schools.com/html/html_css.asp" target="_blank" Style="color: red">Read More</a>
+        </p>
+		<hr>
+		<iframe src="https://en.wikipedia.org/wiki/JavaScript"  align="" height="450" width="800" Style="float: center;"> <h3> CSS wikipedia </h3> </iframe>
+		
+    </section>
+	
+	
+	
+	<section id="ImageGallery">
+	<div class="divider"><h1>Image Gallery</h1></div>
+		<h2 align="center">We Will Provide The Best Background image For You</h2>
+			<hr><hr>
+				<div>
+					<br>
+						<div class="gallery">
+							<a href="images\Beautiful Garden-1.jpg" target="_blank"><img src="images\Beautiful Garden-1.jpg" alt="Beautiful garden"></a>
+							<a href="images\Beautiful Garden-2.jpg" target="_blank"><img src="images\Beautiful Garden-2.jpg" alt="Beautiful garden with colourful Flowers"></a>
+							<a href="images\Beautiful Garden-3.jpg" target="_blank"><img src="images\Beautiful Garden-3.jpg" alt="Beautiful Flowers with sunrice"></a>
+							<a href="images\Beautiful Garden-4.jpg" target="_blank"><img src="images\Beautiful Garden-4.jpg" alt="The Garden with Green Grass"></a>
+							<a href="images\Flowers Picture-1.jpg" target="_blank"><img src="images\Flowers Picture-1.jpg" alt="The Beautiful Flowers with sunrays"></a>
+							<a href="images\Flowers Picture-2.jpg" target="_blank"><img src="images\Flowers Picture-2.jpg" alt="Flower Image"></a>
+							<a href="images\Flowers Picture-3.jpg" target="_blank"><img src="images\Flowers Picture-3.jpg" alt="the animated image of sunflowers with butterflies"></a>
+						</div>
+				<br><hr><br>
+					<div class="gallery">
+							<a href="images\Nature-1.jpg" target="_blank"><img src="images\Nature-1.jpg" alt="The Nature Image with so many fungus and a waterfall"></a>
+							<a href="images\Nature-2.jpg" target="_blank"><img src="images\Nature-2.jpg" alt="The Night view of Beautiful Nature"></a>
+							<a href="images\Nature-3.jpg" target="_blank"><img src="images\Nature-3.jpg" alt="The Beautiful Nature with sunrice"></a>
+							<a href="images\Nature-4.jpg" target="_blank"><img src="images\Nature-4.jpg" alt="The Nature view with green Grass and Trees"></a>
+							<a href="images\Nature-5.jpg" target="_blank"><img src="images\Nature-5.jpg" alt="The coldest view of forest"></a>
+							<a href="images\Beautiful Nature-1.jpg" target="_blank"><img src="images\Beautiful Nature-1.jpg" alt=""></a>
+							<a href="images\Beautiful Nature-2.jpg" target="_blank"><img src="images\Beautiful Nature-2.jpg" alt=""></a>
+						</div>
+				<br><hr><br>	
+					<div class="gallery">
+							<a href="images\Sky Wallpaper-1.jpg" target="_blank"><img src="images\Sky Wallpaper-1.jpg" alt=""></a>
+							<a href="images\Sky Wallpaper-2.jpg" target="_blank"><img src="images\Sky Wallpaper-2.jpg" alt="The Beautiful sky image"></a>
+							<a href="images\Sky Wallpaper-3.jpg" target="_blank"><img src="images\Sky Wallpaper-3.jpg" alt="sky image with water waves"></a>
+							<a href="images\Sky Wallpaper-4.jpg" target="_blank"><img src="images\Sky Wallpaper-4.jpg" alt="The Beautiful sky at sunset"></a>
+							<a href="images\Beautiful Nature-3.jpg" target="_blank"><img src="images\Beautiful Nature-3.jpg" alt=""></a>
+							<a href="images\Beautiful Nature-4.jpg" target="_blank"><img src="images\Beautiful Nature-4.jpg" alt=""></a>
+						</div>
+				<br><hr><br>		
+						<div class="gallery">
+							<a href="images\Mountain-1.bmp" target="_blank"><img src="images\Mountain-1.bmp" alt="a ice mountain"></a>
+							<a href="images\Mountain-2.bmp" target="_blank"><img src="images\Mountain-2.bmp" alt="The Mountains of Himaliyas"></a>
+							<a href="images\Mountain-3.bmp" target="_blank"><img src="images\Mountain-3.bmp" alt="The mountain image"></a>
+							<a href="images\Mountain-4.bmp" target="_blank"><img src="images\Mountain-4.bmp" alt="The most famous mountain picture"></a>
+							<a href="images\Mountain-5.bmp" target="_blank"><img src="images\Mountain-5.jpg" alt="The Tall Mountain with Clouds"></a>
+						</div>
+				<br><hr><br>												
+						<div class="gallery">
+							<a href="images\Colorful Abstract.jpg" target="_blank"><img src="images\Colorful Abstract.jpg" alt=""></a>
+							<a href="images\Colorful Design Wallpaper.jpg" target="_blank"><img src="images\Colorful Design Wallpaper.jpg" alt=""></a>
+							<a href="images\Colorful Wood.jpg" target="_blank"><img src="images\Colorful Wood.jpg" alt=""></a>
+							<a href="images\Knitting Balls.jpg" target="_blank"><img src="images\Knitting Balls.jpg" alt=""></a>
+							<a href="images\Water-Drop.jpg" target="_blank"><img src="images\Water-Drop.jpg" alt=""></a>
+							</div>
+				<br><hr><br>		
+						<div class="gallery">
+							<a href="images\River-1.jpg" target="_blank"><img src="images\River-1.jpg" alt=""></a>
+							<a href="images\River-2.jpg" target="_blank"><img src="images\River-2.jpg" alt=""></a>
+							<div class="vl" style=" border-left: 6px solid green; height: 150px;"></div>
+							<a href="images\Road-1.jpg" target="_blank"><img src="images\Road-1.jpg" alt=""></a>
+							<a href="images\Road-2.jpg" target="_blank"><img src="images\Road-2.jpg" alt=""></a>
+						</div>
+				<br><hr><br>
+						
+				</div>
+	</section>
+	
+	
+	
+	<section id="WebsiteExamples">
+	<div class="divider"><h1> Some Examples of websites </h1></div>
+		<nav>
+			<table border="5px" align="center" color="White">
+			<tr>
+				<td><iframe src="Other/H1-H6_Tags.html" height="400" width="500">	Example-1	</iframe></td>
+				<td><iframe src="Other/Button.html" height="400" width="400">		Example-2	</iframe></td>
+				<td><iframe src="Other/List_Tag.html" height="400" width="400">		Example-3	</iframe></td>
+			</tr>
+			<tr>
+				<td><iframe src="Other/website.html" height="400" width="500">		Example-4	</iframe></td>
+				<td><iframe src="Other/Button&table.html" height="400" width="400">	Example-5	</iframe></td>
+				<td><iframe src="Other/website_3.html" height="400" width="400">	Example-6	</iframe></td>
+			</tr>
+			</table>
+		</nav>
+	</section>
+	
+	
+	
+	<section id="contact" background="images/New folder/images.jpg">
+	<div class="divider"><h1>Contact</h1></div>
+     <h2>Get in Touch</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+	
+
+    <!-- <footer> -->
+        <!-- <p> Thanks For Visiting Our Website. </p> -->
+    <!-- </footer> -->
+	
+	
+	
+	<footer>
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>WebStart</h3>
+      <p>Your one-stop website for learning web development, HTML, CSS, and programming basics.</p>
+    </div>
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#learn">Learn</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#ImageGallery">images</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h4>Follow Us</h4>
+      <a href="#sidhant"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#vivek"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#niraj"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#yash"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p> Thanks For Visiting  <a href="#">Our Website.</a></p>
+  </div>
+</footer>

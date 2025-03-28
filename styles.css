@@ -1,0 +1,439 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 200px;
+    height: 150px;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+h1.one{
+	border-style: dotted;
+	border-color: blue;
+}
+
+
+hr	{
+	height: 4px;
+	color: blue;
+	background-color: blue;
+}
+
+
+/* this is the header section */
+header {
+    background: #333;
+	border:2px solid yellow;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Model Pop-up Code */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #080808;
+  padding: 20px;
+  width: 60%;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,0,0,0.3);
+}
+
+.close {
+  position: absolute;
+  top: 10px; right: 20px;
+  cursor: pointer;
+  font-size: 28px;
+  color: red;
+}
+
+
+/* introduction section of HTML, CSS, JavaScript Little Information */
+#introduction {
+  text-align: center;
+}
+
+.intro-section {
+  margin: 30px 0;
+  text-align: left;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.intro-section h2 {
+  color: #007bff;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+.intro-section ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.intro-section ul li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+
+
+.dark-mode {
+	background-color: black;
+	color: white;
+	transition-duration: 0.8s;
+	transform: 0.8s;
+}
+
+
+/* this is the Text devider */
+.divider {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.divider::before, .divider::after {
+  flex: 1;
+  content: '';
+  padding: 3px;
+  background-color: red;
+  margin: 5px;
+}
+
+iframe {
+	height: ;
+	width: ;
+	border-style: dotted;
+	border-color: ;
+	margin: 10px 10px;
+	border: 1px solid black;
+	outline-style: solid;
+	outline-color: yellow;
+	outline-width: medium;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a.active {
+  color: #ff6600;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+}
+
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+
+.more-button-container {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+}
+
+#moreBtn {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute right;
+    right: 0;
+    top: 50px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 0;
+}
+
+.menu a:hover {
+    color: #007bff;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+
+button {
+    background: #007bff;
+    color: black;
+    padding: 10px;
+    border: double;
+	display: ;
+	border-color: yellow;
+    cursor: pointer;
+}
+
+.button {
+  background-color: #04AA6D; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+
+
+/* introduction button */
+.button1 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #fa0000;
+}
+
+.button1:hover {
+  background-color: #fa0000;
+  color: white;
+}
+
+
+/* home button */
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #faf200;
+}
+
+.button2:hover {
+  background-color: #faf200;
+  color: white;
+}
+
+
+/* about button */
+.button3 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #08fa00;
+}
+
+.button3:hover {
+  background-color: #08fa00;
+  color: white;
+}
+
+
+/* service button */
+.button4 {
+  background-color: white;
+  color: black;
+  border: 2px solid #0079fa;
+}
+
+.button4:hover {
+	background-color: #0079fa;
+	color: white;
+}
+
+
+/* learn button */
+.button5 {
+  background-color: white;
+  color: black;
+  border: 2px solid #fc03e3;
+}
+
+.button5:hover {
+  background-color: #fc03e3;
+  color: white;
+}
+
+
+/* contact button */
+.button6 {
+  background-color: white;
+  color: black;
+  border: 2px solid #000000;
+}
+
+.button6:hover {
+  background-color: #000000;
+  color: white;
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+
+
+/* this is the header section */
+footer {
+    background: #333;
+	border:2px solid yellow;
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
+
+
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 20px 10px;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.footer-about h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links h4, .footer-social h4 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.8s;
+}
+
+.footer-links ul li a:hover {
+    color: #00c3ff;
+}
+
+.footer-social a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #00c3ff;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #555;
+    padding-top: 15px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.footer-bottom a {
+    color: #00c3ff;
+    text-decoration: none;
+}
